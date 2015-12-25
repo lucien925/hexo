@@ -1,4 +1,4 @@
-title: ECMAScript6系列之结构表达式
+title: 学习ECMAScript6系列之结构表达式
 date: 2015-12-07 21:54:42
 tags:
 - Javascript

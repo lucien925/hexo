@@ -1,4 +1,4 @@
-title: js-modularization-programming2
+title: 学习javascript 模块化的总结(二)
 date: 2015-12-06 12:06:20
 tags:
 - Javascript
