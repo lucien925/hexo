@@ -9,7 +9,7 @@ tags:
 
 {% asset_img container-block.png  Containing-block %}
 
-关于包含块的具体描述可以[点击这里](http://www.w3help.org/zh-cn/kb/008/"Containing block")
+关于包含块的具体描述可以[点击这里](http://www.w3help.org/zh-cn/kb/008/ "Containing block")
 ## 基于包含块
 ### 基于包含块的宽度
 有这么一类属性，当给它们设置百分比值时，它们的参照是包含块的宽度。

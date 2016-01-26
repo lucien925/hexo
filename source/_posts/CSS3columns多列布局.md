@@ -12,14 +12,14 @@ categories: 前端
 随着web应用的复杂化，我们常常需要在页面中实现比较多的复杂布局，尤其是多列布局，而传统的使用浮动和绝对定位已经很难适应需求的变化了，而且这也不是最简单和省时的。事实上，使用css来实现多列布局一直是一个非常尴尬的选择，但是在最新的CSS3中，css提供了columns来帮助我们更好的来实现多列布局。
 
 ## 浏览器支持
-我们来看看** columns **的浏览器支持情况(你可以在[Can i use](http://caniuse.com/#search=column"Can i use")中查看)：
+我们来看看**columns**的浏览器支持情况(你可以在[Can i use](http://caniuse.com/#search=column"Can i use")中查看)：
 * IE 10+
 * Firefox 5+
 * Chrome 12+
 * Safari 3.1+
 * Opera 11.5+
 
-其中** Safari **是9.0和** IE **10以上才全部支持** Columns ** ,其他的浏览器版本都只是部分支持,Firefox需要加上-moz-的前缀,Chrome和Safari需要加上-webkit-的前缀.
+其中**Safari**是9.0和**IE**10以上才全部支持**Columns**,其他的浏览器版本都只是部分支持,Firefox需要加上-moz-的前缀,Chrome和Safari需要加上-webkit-的前缀.
 
 ## 快速开始
 ### HTML代码

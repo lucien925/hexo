@@ -19,7 +19,7 @@ Long time ago，我们编写Javascript代码都是这样的：
 		console.log('this is c')
 	}
 	..... ):
-这样编写代码会出现很多问题，比如全局作用域的污染，于是乎，又出现了一种新的写法,叫做`立即执行函数`(Immediately-Invoked Function Expression,IIFE) ：
+这样编写代码会出现很多问题，比如全局作用域的污染(这简直是前端开发人员的禁忌啊)，于是乎，又出现了一种新的写法,叫做`立即执行函数`(Immediately-Invoked Function Expression,IIFE) ：
 
 	var a = (function() {
 
@@ -55,7 +55,7 @@ Long time ago，我们编写Javascript代码都是这样的：
 这里有几个问题：
 * 难以维护
 * 如果这些模块之间有明确的调用关系的话（比如f需要用到a中的代码），那么必须保证调用的要加载在被调用的后面
-* 我们需要向服务器请求7次，这个，你懂得
+* 我们需要向服务器请求7次(7次，你知道向服务器请求7个文件要消耗多少时间、资源.....)
 
 ## CommonJS规范
 CommonJS最先实现的在服务端，Let's check it:
@@ -69,7 +69,7 @@ CommonJS最先实现的在服务端，Let's check it:
 	// main.js
 	var method = require('./add')
 	method.add(1, 2) // 输出为 3
-Node.js也是实现了CommonJS的规范来加载模块(详情看官网)，然而CommonJS的规范是使用在服务端([CommonJS](http://www.commonjs.org/ 'CommonJS'))。CommonJS主要分为模块引用、模块定义和模块标识。
+Node.js也是实现了CommonJS的规范来加载模块(详情看官网)，CommonJS主要分为模块引用、模块定义和模块标识。
 ### 模块引入
 CommonJS定义了一个require()的全局函数来导入我们定义的模块倒当前上下文中。
 ### 模块导出
@@ -108,7 +108,7 @@ define函数用于定义模块，第一个参数定义我们要定义的模块�
 ### Require.js
 
 Request.js是一个实现了AMD的前端模块加载库。
-关于Require.js的使用方法就不多说了，查看[中文Docs](http://www.requirejs.cn/)。需要提的是require.js用了一种在CommonJS中来定义模块的方式来方便我们加载CommonJS规范的模块：
+关于Require.js的使用方法，篇幅有限，请移步查看[中文Docs](http://www.requirejs.cn/)。需要提的是require.js用了一种在CommonJS中来定义模块的方式来方便我们加载CommonJS规范的模块：
 
 	define(function(require, exports, module) {
 		var a = require('module/moduleA');
